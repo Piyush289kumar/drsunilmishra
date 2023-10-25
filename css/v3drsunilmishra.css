@@ -1,0 +1,817 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,300&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #03254c;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+/* global styling */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.logo a img {
+  /* height: 150px; */
+  width: 45px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.web-name a img {
+  width: 90px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+/* header */
+.top-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #fff;
+  padding: 7px 20px;
+}
+
+.top-head .fas {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/******* js related styling *****/
+.times-btn {
+  display: none;
+}
+
+.nav-bar {
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+}
+
+.show-nav {
+  height: auto;
+}
+
+/********************/
+.nav-bar ul li {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  display: block;
+  padding: 5px 15px;
+  margin-right: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-bar ul li:hover {
+  background: #0083c938;
+}
+
+.nav-bar ul li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-bar ul li a:hover {
+  text-decoration: underline;
+}
+
+.cpanel {
+  color: #f3f3f3;
+}
+
+.login_btn a {
+  color: #ff5733;
+}
+
+.login_btn {
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 24px;
+}
+
+.login_btn a {
+  color: #e1412e;
+  background: white;
+  font-size: 10px;
+  padding: 6px 12px;
+  margin: 0;
+  border: 2px solid #ff5733;
+  border-radius: 24px;
+  transition: all 0.2s;
+}
+
+.login_btn a:hover {
+  color: #fff !important;
+  border: 2px solid white;
+  background: #ff5733;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: whitesmoke;
+  margin-right: 25px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.dropdown-content a p {
+  border-radius: 12px;
+  padding: 6px 10px;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content p:hover {
+  background: #22e095;
+  color: whitesmoke;
+}
+
+.profilecover {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Dropdown */
+.drsunilmishrapic {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+
+.contectText {
+  color: #fff;
+  padding: 50px;
+  margin-top: 100px;
+  text-align: left;
+}
+
+.contectText span {
+  font-size: 18px;
+}
+
+.contectText h1 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 3.8rem;
+}
+
+.contectText p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+
+.contectText a {
+  color: #f3f3f3;
+  font-size: 16px;
+  font-weight: 800;
+  border: 1px solid #f3f3f3;
+  padding: 6px 10px;
+  border-radius: 12px;
+  line-height: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contectText a:hover {
+  background: #f3f3f3;
+  color: #000;
+  font-size: 16px;
+  font-weight: 800;
+  border: 1px solid #f3f3f3;
+  padding: 6px 10px;
+  border-radius: 12px;
+  line-height: 1.8rem;
+  cursor: pointer;
+}
+
+.note-box {
+  width: 50%;
+}
+
+.landingPageSocialIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#laptopScreen {
+  display: block;
+}
+
+#mobileScreen {
+  display: none;
+}
+
+/* Phone Frame */
+.iphoneFrameDiv {
+  display: none;
+}
+
+/* Phone Frame */
+/* about me */
+.about-me {
+  background: #fff;
+}
+
+.contentAboutMe {
+  margin: 5px;
+  color: #03254c;
+}
+
+#secondPic {
+  margin-top: 50px;
+  border-radius: 12px;
+}
+
+.contentAboutMeText h2 {
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.contentAboutMeText p {
+  font-size: 16px;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #03254c;
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+  text-align: left;
+}
+
+.feature {
+  margin-top: 50px;
+}
+
+.feature hr {
+  width: 75%;
+  border: 1px solid gray;
+}
+
+.featureIcon {
+  text-align: center;
+}
+
+.featureIcon img {
+  margin: 15px 20px;
+}
+
+/* diagram */
+.diagram {
+  padding: 5% 10%;
+  text-align: center;
+  color: #03254c;
+}
+
+.diagram h1 {
+  font-weight: 900;
+}
+
+.diagram p {
+  font-weight: 700;
+}
+
+/* about me */
+
+/* Note Section Start */
+#note {
+  padding: 50px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+#note span {
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/* Gatividhi Section Start */
+.gatividhi {
+  background: none;
+
+}
+
+/* Gatividhi Section End */
+
+
+
+/* endorsements start */
+.endorsements {
+  background-color: #e3e3e3;
+  padding: 3% 25px;
+}
+
+.endorsementsHeadling {
+  text-align: center;
+  font-weight: 900;
+  color: #000;
+}
+
+.team-boxed {
+  color: #313437;
+  background-color: #eef4f7;
+}
+
+.team-boxed p {
+  color: #7d8285;
+}
+
+.team-boxed h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  .team-boxed h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.team-boxed .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.team-boxed .intro p {
+  margin-bottom: 0;
+}
+
+.team-boxed .people {
+  padding: 50px 0;
+}
+
+.team-boxed .item {
+  text-align: center;
+}
+
+.team-boxed .item .box {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.team-boxed .item .name {
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+.team-boxed .item .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #d0d0d0;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.team-boxed .item .description {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.team-boxed .item img {
+  max-width: 160px;
+}
+
+.team-boxed .social {
+  font-size: 18px;
+  color: #a2a8ae;
+}
+
+.team-boxed .social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.team-boxed .social a:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: #000;
+  padding: 65px 100px 0px 100px;
+  color: #fff;
+}
+
+footer h2 {
+  font-weight: 900;
+}
+
+#logofooter {
+  width: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icon a i {
+  color: #eef4f7;
+  padding: 50px 0;
+  font-size: 2rem;
+}
+
+.footer-span {
+  padding: 10px 0 20px 0;
+}
+
+.youtubeFrame h5 {
+  margin-bottom: 25px;
+}
+
+.fbFrame h5 {
+  margin-bottom: 25px;
+}
+
+.endorsementBigDevice {
+  display: block;
+}
+
+.endorsementSmallDevice {
+  display: none;
+}
+
+
+/* endorsements end */
+/* Pagination block Start */
+.pagination {
+  display: block;
+  text-align: center;
+  margin: 3% 0;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+.pagination li a {
+  border: none;
+  background-image: linear-gradient(109.6deg, rgba(39, 142, 255, 1) 11.2%, rgba(98, 113, 255, 0.78) 100.2%) !important;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 12px;
+}
+
+.pagination li a:hover,
+.pagination>li>a:focus {
+  color: #fff;
+  background: #000;
+}
+
+.page_links {
+  background-color: #ccc;
+  font-family: arial, verdana;
+  font-size: 12px;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 6px;
+  margin: 3px;
+}
+
+#page_a_link {
+  font-size: 12px;
+  border: 1px #000000 solid;
+  color: #000;
+  background-color: #cccccc;
+  padding: 6px;
+  margin: 3px;
+  text-decoration: none;
+}
+
+i.fa {
+  color: #222;
+}
+
+.active a {
+  background: #000 !important;
+  color: #fff;
+}
+
+/* Pagination block End */
+
+
+/* Note Section End */
+/* @Media Query  */
+/* Media Query */
+/* Mobile Phone */
+@media (max-width: 550px) {
+  #laptopScreen {
+    display: none;
+  }
+
+  #mobileScreen {
+    display: block;
+  }
+
+  .landingPageSocialIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .h1text {
+    font-size: 45px !important;
+  }
+
+  .contectText h1 {
+    font-size: 50px;
+  }
+
+  .contectText span {
+    font-size: 20px;
+  }
+
+  .contectText p {
+    font-size: 14px;
+  }
+
+  .drsunilmishrapic {
+    width: 100%;
+  }
+
+  .note-box {
+    width: 100% !important;
+  }
+
+  .note-box p {
+    font-size: 12px;
+  }
+
+  #secondPic {
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 12px;
+  }
+
+  .iframeDiv {
+    margin-bottom: 25px;
+  }
+
+  .endorsementsHeadling {
+    margin-top: 25px;
+  }
+
+  #iframeDivfb {
+    width: 100% !important;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
+  #note {
+    padding: 50px 0;
+  }
+
+  #iframeDivfb {
+    margin-top: 10px;
+  }
+
+  .youtubeFrame {
+    margin-bottom: 25px;
+  }
+
+  .fbFrame {
+    margin-top: 25px;
+  }
+
+  /* diagram */
+  .diagram {
+    padding: 5% 10%;
+    text-align: center;
+  }
+
+  .diagram h1 {
+
+    font-weight: 900;
+  }
+
+  .diagram p {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .endorsementBigDevice {
+    display: none;
+  }
+
+  .endorsementSmallDevice {
+    display: block;
+  }
+
+  footer {
+    padding: 30px 0px 10px 0px !important;
+    text-align: center;
+  }
+
+  #logofooter {
+    width: 70%;
+  }
+
+  .social-icon a i {
+    padding: 20px 0;
+  }
+
+  .footer-span {
+    padding: 50px 0 25px 0;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  /* .youtubeFrame */
+  #youtubeIframe {
+    height: 100% !important;
+  }
+
+  /* Phone Frmae Section Start */
+  .gatividhi {
+    display: none;
+  }
+
+  .iphoneFrameDiv {
+    display: block;
+  }
+
+  .iphoneFramenotch {
+    height: 5px;
+    width: 25%;
+    margin: 25px auto;
+    background: #fac;
+    /* border: 15px solid #000; */
+    border: 15px solid #6c757d;
+    border-radius: 45px;
+    z-index: 99;
+    position: relative;
+  }
+
+  .iphoneFrame {
+    height: 80vh;
+    margin: 10px 20px;
+    margin-top: -80px;
+    background-color: #fff;
+    border: 8px ridge #fac;
+    /* border: 8px ridge #171E27; */
+    border-radius: 45px;
+  }
+
+  .iphoneFramebtn {
+    height: 50px;
+    width: 50px;
+    margin: -87px auto 70px;
+    border: 15px solid   -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99999;
+    top: 100%;
+    left: 44%;
+    background: hsla(217, 100%, 50%, 1);
+
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1);
+  }
+
+  /* Phone Frmae Section End */
+}
+
+/* Tablet  */
+@media (max-width: 790px) {
+  .contectText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1138px) {
+
+  /* Nav bar */
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-bar ul li a {
+    color: black;
+    cursor: pointer;
+  }
+
+  .nav-bar ul li a:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .nav-bar nav ul li:hover {
+    background: #303030;
+    border-radius: 24px;
+  }
+}
+
+@media (min-width: 1138px) {
+
+  /* nav */
+  .ham-btn,
+  .times-btn {
+    display: none !important;
+  }
+
+  .navigation-container {
+    display: flex;
+    background: transparent;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .top-head {
+    flex: 0 0 5%;
+  }
+
+  .nav-bar {
+    flex: 1 0 auto;
+    height: 100%;
+    margin-right: 15px;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-bar nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .nav-bar nav ul li {
+    padding-right: 25px;
+  }
+
+  .nav-bar nav ul li:hover {
+    background: none;
+  }
+}
